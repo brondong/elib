@@ -1,0 +1,64 @@
+.container {
+  margin-top: 20px;
+}
+.panel {
+  border: 1px solid #ddd;
+}
+.panel-heading {
+  border-bottom: 1px solid #ddd;
+}
+.panel-footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+.form-control {
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-success .form-control,
+.has-warning .form-control,
+.has-error .form-control,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.has-error .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.shape {    
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  float:right;
+  height: 0px;
+  width: 0px;
+}
+.shape-text {
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  position:relative;
+  right:-23px;
+  top:3px;
+  white-space: nowrap;
+}
+.offer-info .shape {
+  border-color: transparent #5bc0de transparent transparent;
+}
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  text-align:left;
+  margin-right:-4px;
+}
