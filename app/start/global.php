@@ -79,3 +79,16 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Cek Link
+|--------------------------------------------------------------------------
+|
+| fungsi untuk mengecek uri segment kesatu untuk merubah panah pada menu
+|
+*/
+function cek_link($satu)
+{
+  if (Request::segment(1) == $satu) return 'active';
+}
