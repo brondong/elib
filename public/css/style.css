@@ -7,6 +7,9 @@
 .panel-heading {
   border-bottom: 1px solid #ddd;
 }
+.panel-title {
+  font-size: 25px;
+}
 .panel-footer {
   background-color: #fff;
   border-top: 1px solid #ddd;
@@ -36,29 +39,29 @@
 }
 .shape {    
   border-style: solid;
-  border-width: 0 40px 40px 0;
-  float:right;
+  border-width: 0 50px 50px 0;
+  float: right;
   height: 0px;
   width: 0px;
 }
 .shape-text {
-  color:#fff;
-  font-size:12px;
-  font-weight:bold;
-  position:relative;
-  right:-23px;
-  top:3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  right: -30px;
+  top: 7px;
   white-space: nowrap;
 }
 .offer-info .shape {
   border-color: transparent #5bc0de transparent transparent;
 }
 .row-centered {
-  text-align:center;
+  text-align: center;
 }
 .col-centered {
-  display:inline-block;
-  float:none;
-  text-align:left;
-  margin-right:-4px;
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
 }
