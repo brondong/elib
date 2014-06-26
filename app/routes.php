@@ -1,9 +1,11 @@
 <?php
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// home
+Route::get('/', array(
+  'as'   => 'home',
+  'uses' => 'HomeController@index'
+));
+// end of home
 
 // login
 Route::get('login', array(
