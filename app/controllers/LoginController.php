@@ -15,7 +15,7 @@ class LoginController extends BaseController {
   /**
    * proses login
    * 
-   * @return json
+   * @return Redirect
    */
   public function proses()
   {
@@ -39,6 +39,18 @@ class LoginController extends BaseController {
     }
 
     return Redirect::route('home');
+  }
+
+  /**
+   * logout user
+   * 
+   * @return Redirect
+   */
+  public function logout()
+  {
+    Auth::logout();
+
+    return Redirect::route('login');
   }
 
 }
