@@ -3,6 +3,14 @@
 class LoginController extends BaseController {
 
   /**
+   * konstruktor
+   */
+  public function __construct()
+  {
+    $this->beforeFilter('csrf', array('on' => 'post'));
+  }
+
+  /**
    * form login
    * 
    * @return View
