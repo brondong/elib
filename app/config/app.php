@@ -109,6 +109,9 @@ return array(
 
 		// validasi
 		'Elib\Providers\ValidasiLoginProvider',
+
+		// proses
+		'Elib\Providers\LoginProvider',
 	),
 
 	/*
@@ -177,6 +180,9 @@ return array(
 
 		// validasi
 		'ValidasiLogin'		=> 'Elib\Facades\ValidasiLoginFacade',
+
+		// login
+		'Login'						=> 'Elib\Facades\LoginFacade',
 	),
 
 );
