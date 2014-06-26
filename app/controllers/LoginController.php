@@ -12,6 +12,7 @@ class LoginController extends BaseController {
 
   /**
    * form login
+   * 
    * @return View
    */
   public function form()
@@ -26,7 +27,16 @@ class LoginController extends BaseController {
    */
   public function proses()
   {
-    
+    // ambil semua input
+    $input = Input::all();
+
+    // input tidak valid
+    if (! ValidasiLogin::cek($input))
+    {
+      return Redirect::back()
+        ->withInput()
+        ->withErrors( ValidasiLogin::errors() );
+    }
   }
 
 }
