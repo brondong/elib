@@ -44,22 +44,26 @@
             <div class="panel-body">
               {{ Form::open(array('route' => 'login')) }}
 
-                <div class="form-group">
+                <div class="form-group {{ ($errors->has('email') ? 'has-error' : '') }}">
                   {{ Form::label('email', 'Email') }}
 
                   {{ Form::text('email', Input::old('email'), array(
                       'class'       => 'form-control',
                       'placeholder' => 'Ketikkan email anda...'
                   )) }}
+
+                  <p class="help-block">{{ $errors->first('email') }}</p>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group {{ ($errors->has('password') ? 'has-error' : '') }}">
                   {{ Form::label('password', 'Password') }}
 
                   {{ Form::password('password', array(
                       'class'       => 'form-control',
                       'placeholder' => 'Ketikkan password anda...'
                   )) }}
+
+                  <p class="help-block">{{ $errors->first('password') }}</p>
                 </div>
 
                 <div class="checkbox">
