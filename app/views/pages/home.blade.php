@@ -3,3 +3,7 @@
 @section('title')
   Home
 @stop
+
+@section('konten')
+  Konten
+@endsection
