@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('SeederTabelAktivitas');
 		$this->command->info('Data tabel aktivitas berhasil dibuat!');
+
+		$this->call('SeederTabelJejak');
+		$this->command->info('Data tabel jejak berhasil dibuat!');
 	}
 
 }
