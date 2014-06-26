@@ -3,14 +3,6 @@
 class LoginController extends BaseController {
 
   /**
-   * konstruktor
-   */
-  public function __construct()
-  {
-    
-  }
-
-  /**
    * form login
    * 
    * @return View
@@ -37,6 +29,16 @@ class LoginController extends BaseController {
         ->withInput()
         ->withErrors( ValidasiLogin::errors() );
     }
+
+    // login gagal
+    if (! Login::cek())
+    {
+      return Redirect::back()
+        ->withInput()
+        ->withErrors( array('password' => 'Password tidak cocok.') );
+    }
+
+    return Redirect::route('home');
   }
 
 }
