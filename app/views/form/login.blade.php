@@ -9,12 +9,11 @@
     <meta name="author" content="Heru Rusdianto">
     <title>Login</title>
 
-    <!-- Bootstrap -->
+    <!-- css -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <!-- /css -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -43,37 +42,53 @@
             
             <!-- .panel-body -->
             <div class="panel-body">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ketikkan email anda...">
-              </div>
+              {{ Form::open(array('route' => 'login')) }}
 
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Ketikkan password anda...">
-              </div>
+                <div class="form-group">
+                  {{ Form::label('email', 'Email') }}
 
-              <div class="checkbox">
-                <input type="checkbox" name="ingat" id="ingat"> Ingat saya
-              </div>
+                  {{ Form::text('email', Input::old('email'), array(
+                      'class'       => 'form-control',
+                      'placeholder' => 'Ketikkan email anda...'
+                  )) }}
+                </div>
+
+                <div class="form-group">
+                  {{ Form::label('password', 'Password') }}
+
+                  {{ Form::password('password', array(
+                      'class'       => 'form-control',
+                      'placeholder' => 'Ketikkan password anda...'
+                  )) }}
+                </div>
+
+                <div class="checkbox">
+                  {{ Form::checkbox('ingat', true) }} Ingat saya
+                </div>
             </div>
             <!-- /.panel-body -->
 
             <!-- .panel-footer -->
             <div class="panel-footer">
-              <div class="text-right">
-                <button type="submit" class="btn btn-info">Masuk</button>
-              </div>
+                <div class="text-right">
+                  {{ Form::submit('Masuk', array('class' => 'btn btn-info')) }}
+                </div>
+
+              {{ Form::close() }}
             </div>
             <!-- /.panel-footer -->
           </div>
-        </div>        
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-centered -->
       </div>
+      <!-- /.row-centered -->
     </div>
+    <!-- /.container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- javascript -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!-- /javascript -->
   </body>
 </html>
