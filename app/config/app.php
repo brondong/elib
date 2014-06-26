@@ -107,6 +107,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		// validasi
+		'Elib\Providers\ValidasiLoginProvider',
 	),
 
 	/*
@@ -173,6 +175,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+		// validasi
+		'ValidasiLogin'		=> 'Elib\Facades\ValidasiLoginFacade',
 	),
 
 );
