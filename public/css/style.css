@@ -1,11 +1,84 @@
-.container {
+.container, .container-fluid {
   margin-top: 20px;
+  background-color: #fff;
+}
+.navbar-elib {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+  border-radius: 0;
+}
+.navbar-elib span {
+  color: #fff;
+}
+.navbar-brand {
+  padding: 15px 10px;
+  font-size: 30px;
+}
+#menu, #konten {
+  margin-bottom: 20px;
+}
+.nav-parent > li, 
+.nav-parent > li:hover,
+.nav-parent > li > a, 
+.nav-parent > li > a:hover {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.nav-parent > li {
+  border-radius: 0px;
+}
+.nav-child > li {
+  border-left: 1px solid #5bc0de;
+  border-bottom: 1px solid #5bc0de;
+}
+.nav-child > li > a,
+.nav-child > li > a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.nav-child > li:not(:first-child) > a {
+  margin-top: -2px;
+}
+.nav-child > li:hover,
+.nav-child > .active {
+  border-right: 3px solid #5bc0de;
+}
+.nav-child > li > a:hover {
+  background: #fff;
 }
 .panel {
   border: 1px solid #ddd;
 }
 .panel-heading {
   border-bottom: 1px solid #ddd;
+}
+.shape {    
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  float: right;
+  height: 0px;
+  width: 0px;
+}
+.shape-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  right: -30px;
+  top: 7px;
+  white-space: nowrap;
+}
+.offer-info .shape {
+  border-color: transparent #5bc0de transparent transparent;
+}
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
 }
 .panel-title {
   font-size: 25px;
@@ -36,32 +109,4 @@
 .has-error .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.shape {    
-  border-style: solid;
-  border-width: 0 50px 50px 0;
-  float: right;
-  height: 0px;
-  width: 0px;
-}
-.shape-text {
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  position: relative;
-  right: -30px;
-  top: 7px;
-  white-space: nowrap;
-}
-.offer-info .shape {
-  border-color: transparent #5bc0de transparent transparent;
-}
-.row-centered {
-  text-align: center;
-}
-.col-centered {
-  display: inline-block;
-  float: none;
-  text-align: left;
-  margin-right: -4px;
 }
