@@ -8,7 +8,7 @@ class ValidasiLogin extends Validasi {
    * @var array
    */
   protected static $rules = array(
-    'email'    => 'required|max:50|email',
+    'email'    => 'required|max:50|email|exists:users,email',
     'password' => 'required'
   );
 
