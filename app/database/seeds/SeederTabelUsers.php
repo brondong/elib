@@ -3,8 +3,6 @@ class SeederTabelUsers extends Seeder {
 
   public function run()
   {
-    User::truncate();
-
     $date = new DateTime();
 
     $user = array(

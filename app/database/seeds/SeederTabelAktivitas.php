@@ -3,8 +3,6 @@ class SeederTabelAktivitas extends Seeder {
 
   public function run()
   {
-    // Aktivitas::truncate();
-
     $date = new DateTime();
 
     $aktivitas = array(
