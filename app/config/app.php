@@ -179,10 +179,10 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 		// validasi
-		'ValidasiLogin'		=> 'Elib\Facades\ValidasiLoginFacade',
+		'ValidasiLogin'	  => 'Elib\Facades\ValidasiLoginFacade',
 
 		// login
-		'Login'						=> 'Elib\Facades\LoginFacade',
+		'Login'           => 'Elib\Facades\LoginFacade',
 	),
 
 );
